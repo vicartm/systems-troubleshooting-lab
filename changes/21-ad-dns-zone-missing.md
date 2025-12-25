@@ -9,7 +9,7 @@ Although the DNS role was installed and the domain existed, no forward lookup zo
 (`_ldap._tcp`, `_kerberos._tcp`) were published.  
 As a result, the domain was undiscoverable to non-Windows systems despite correct network connectivity.
 
-At this stage, the domain name was `lab.example`.
+At this stage, the domain name was **`lab.example`**.
 
 ## Expected Impact
 Any Linux system attempting to discover, join, or authenticate against the domain would fail at the discovery stage until Active Directory
@@ -28,6 +28,8 @@ The issue was resolved by **rebuilding the Windows Server** with:
 - Static IP configuration applied before role installation
 - Proper DNS configuration during promotion
 - Clean Active Directory promotion as the first domain controller
+
+During this rebuild, the domain was renamed to **`int.acme.com`** for clarity and convenience.
 
 This resulted in the automatic creation of the AD-integrated DNS zone and service records.
 
