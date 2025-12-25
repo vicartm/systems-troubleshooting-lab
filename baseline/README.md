@@ -1,23 +1,23 @@
-#Baseline
+# Baseline
 
-##Purpose
+## Purpose
 
 Record known-good states before integration
 
-##Rules
+## Rules
 
 -Facts only
 -No steps
 -No fixes
 
-##Each entry includes
+## Each entry includes
 
 -Intent
 -Baseline state
 -Observations
 -Boundaries
 
-##Naming
+## Naming
 
 -00-service-server-baseline.md
 -01-identity-server-baseline.md
